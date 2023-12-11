@@ -9,7 +9,7 @@ jobs:
       - name: install node version 16
         uses: actions/setup-node@v3
         with:
-          node-version-file: 16
+          node-version: 16
       - name: node version
         run: echo $(node -v)
       - name: print bye
