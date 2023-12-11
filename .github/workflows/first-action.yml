@@ -6,6 +6,10 @@ jobs:
     steps:
       - name: print greeting
         run: echo "Hello world!"
+      - name: install node version 16
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: 16
       - name: node version
         run: echo $(node -v)
       - name: print bye
