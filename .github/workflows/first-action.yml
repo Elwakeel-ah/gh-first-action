@@ -6,5 +6,7 @@ jobs:
     steps:
       - name: print greeting
         run: echo "Hello world!"
+      - name: node version
+        run: echo $(node -v)
       - name: print bye
         run: echo "Bye Bye!"
