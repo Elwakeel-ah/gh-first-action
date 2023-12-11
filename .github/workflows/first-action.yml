@@ -7,9 +7,9 @@ jobs:
       - name: print greeting
         run: echo "Hello world!"
       - name: install node version 16
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v3
         with:
-          node-version-file: 14
+          node-version-file: 16
       - name: node version
         run: echo $(node -v)
       - name: print bye
